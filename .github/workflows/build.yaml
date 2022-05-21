@@ -2,7 +2,7 @@ name: Docker Build and Release
 on: [  ]
 #on: [ push ]
 env:
-  APP_NAME: "pet-clinic-test123"
+  APP_NAME: "petclinicvy"
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
