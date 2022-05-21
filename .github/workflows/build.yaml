@@ -42,11 +42,10 @@ Disable automatic analysis
   
     - name: Compile, build and push
       run: |
-        #### AUFGABE 3 DOCKER BUILD UND PUSH
-          $ heroku container:login
-          $ mvn package
-          $ docker build --tag registry.heroku.com/${APP_NAME}/web -f Dockerfile
-          $ docker push registry.heroku.com/${APP_NAME}/web
+        heroku container:login
+        mvn package
+        docker build --tag registry.heroku.com/${APP_NAME}/web -f Dockerfile
+        docker push registry.heroku.com/${APP_NAME}/web
         
     - name: Release
       run: |
