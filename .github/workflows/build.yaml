@@ -1,5 +1,5 @@
 name: Docker Build and Release
-on: [  ]
+on: [ push ]
 #on: [ push ]
 env:
   APP_NAME: "petclinicvy"
